@@ -11,6 +11,8 @@ export class PalindromeController{
 
         if(palindromesResults.length ===0)
             res.json(`Nenhum palindrome encontrado no intervalo:${init}---${end}`)
-        return res.json(palindromesResults)
+        
+        console.log(palindromesResults)
+        return res.json({numeros:palindromesResults})
     }
 }

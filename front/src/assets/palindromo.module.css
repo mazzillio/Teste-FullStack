@@ -27,6 +27,7 @@ section input{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     list-style: none;
+    padding:0 4%;
 }
 .list li{
     font-size: 18px;

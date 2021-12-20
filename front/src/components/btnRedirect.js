@@ -7,7 +7,6 @@ export default function BtnRedirect({link,title}){
         <Link className={styles.link} to={link}>
             <button className={styles.btn}>
                     {title}
-            
             </button>
         </Link>
     )

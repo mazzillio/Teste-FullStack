@@ -10,7 +10,7 @@ export default function Troco()
     const handle=(value,set)=>{
         set(value)
     }
-    const getData=async(pagamento,compra)=>{
+    const getData=async()=>{
         try {
             const result = await api.get(`/notas/${pagamento}/${valor}/`)
             console.log('resultado',result)
@@ -40,9 +40,12 @@ export default function Troco()
                  <input type="text" placeholder='' id="numeroFim" onChange={(e)=>handle(e.target.value,setValor)}/>
                
 
-                 <button onClick={()=>getData(pagamento,valor)}>Verificar Pagamento</button>
+                 <button onClick={()=>getData()}>Verificar Pagamento</button>
                </section>
-               <section style={{display:resultados.length===0?'none':''}}>  
+               {
+                   resultados.length!==0?
+                   <section style={{display:resultados.length===0?'none':''}}>  
+                             
                              <h4>
                                 Valor do pagamento:
                             </h4>
@@ -58,6 +61,9 @@ export default function Troco()
                                 <li>{resultados.ValorTroco.note100} notas de 100</li>
                             </ul>
                </section>
+               :''
+               }
+               
            </div>
         </div>
     )

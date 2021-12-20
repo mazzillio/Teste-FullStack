@@ -1,12 +1,19 @@
 .btn{
-    width:120px;
-    height: 100px;
-    background-color: orange;
-    color:white;
+    width:220px;
+    height: 120px;
+    background-color: #98ff98;
     border-style: none;
+    border:2px dolid;
+    border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 0.5px 0.5px #696969;
+    color:#696969;
     
 }
+.link{
+    text-decoration: none;
+}
 .btn:hover{
-    background-color: yellow;
+    /*background-color: ;*/
     cursor: pointer;
 }

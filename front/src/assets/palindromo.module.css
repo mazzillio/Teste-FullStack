@@ -1,0 +1,35 @@
+.div{
+    height: 100vh;
+    background-color: #353839;
+    display: block;
+    text-align: center;
+    color:white;
+    padding-top: 1%;
+    justify-content: center;
+}
+header p{
+    margin-top: 5%;
+}
+.Main{
+    margin-top: 7%;
+}
+section input{
+    height: 20px;
+    width: 50px;
+}
+.sectionList{
+    height: 100%;
+}
+.list{
+    margin-top:2%;
+    background-color:#353839 ;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+}
+.list li{
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 1%;
+}

@@ -5,16 +5,17 @@ function App() {
   return (
     <div className={styles.App}>
       <header className={styles.AppHeader}>
-          <h2>Bem vindo a página desenvolvida para a seleção da empresa KUKAC da vaga de FULL-STACK júnior 
+          <h1>Bem vindo</h1>
+          <h4>Página desenvolvida para a seleção da empresa KUKAC da vaga de FULL-STACK júnior 
             do candidato MATTHEUS MAZZILLIO
-          </h2>
+          </h4>
       </header>
       <main className={styles.Main}>
-        <h3>Selecione o menu desejado:</h3>
+        <h2>Selecione o menu desejado:</h2>
         <section className={styles.SectionBtns}>
           <BtnRedirect title='Palíndromo' link='/palindromo'/>
           <BtnRedirect title='Troco' link='/troco'/>
-          <BtnRedirect title='Veículos' link='/ceiculos'/>
+          <BtnRedirect title='Veículos' link='/veiculos'/>
           <BtnRedirect title='Ceps' link='/ceps'/>
         </section>
       </main>

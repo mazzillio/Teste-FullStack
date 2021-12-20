@@ -2,10 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Palindromo from './components/palindromo';
+import Troco from './components/troco';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />}/>
+            <Route path="/palindromo" element ={<Palindromo/>}/>
+            <Route path="/troco" element={<Troco/>} />
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

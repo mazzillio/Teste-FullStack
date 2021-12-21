@@ -16,7 +16,7 @@ const cepsController = new CepsController()
 
 routes.get('/palindromo/:init/:end',palindromeController.handle)
 routes.get('/notas/:money/:value',notasController.handle)
-routes.post('/veiculos/:veiculo', veiculoController.handle)
+routes.post('/veiculos/:veiculo?', veiculoController.handle)
 routes.get('/ceps',cepsController.handle)
 
 export {routes}

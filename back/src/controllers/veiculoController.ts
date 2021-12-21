@@ -7,13 +7,15 @@ export class VeiculoController{
     async handle(req:Request,res:Response)
     {
         const {veiculo}=req.params
-        
-        if(!veiculo)
-            return res.status(400).json({message:'Sem tipo selecionado'})
+       
         const file='./src/jsonData/veiculos.json'
         const arquivo=readFileSync(file,'utf8')
+      
         const dados=arquivo?JSON.parse(arquivo.toString()):[]
-        
+        if(!veiculo)
+            return res.json(dados)
+        if(Object.keys(req.body).length===0)
+            return res.status(400).json('Sem dados para cadastrar veículo')
         if(veiculo==='Carro')
         {
             //const {modelo,ano,marca}=req.body

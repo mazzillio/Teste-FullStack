@@ -1,0 +1,36 @@
+.div{
+    height: 100vh;
+    background-color: #353839;
+    display: block;
+    text-align: center;
+    color:white;
+    padding-top: 1%;
+    justify-content: center;
+}
+.Main{
+    margin-top: 3%;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 10%;
+    text-align: center;
+    justify-content: center;
+}
+.infos input,select,button{
+    width: 20%;
+    margin:0 auto 1%;
+    text-align: center;
+}
+.infos button{
+    margin-top: 1%;
+    height: 30px;
+}
+.veiculos{
+    background-color: #353839;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5%;
+}
+

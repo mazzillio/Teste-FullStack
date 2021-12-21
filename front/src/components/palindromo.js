@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from '../assets/palindromo.module.css'
 import {api} from '../services/api'
+import Header from './header'
 export default function Palindromo()
 {
     const [ini,setIni]=useState(0)
@@ -21,12 +22,11 @@ export default function Palindromo()
     }
     return (
        <div className={styles.div}>
-           <header>
-                <h1>Palindromo</h1>
-                <p>Números palíndromos são aqueles que escritos da direita para esquerda ou da esquerda para direita tem o mesmo valor. 
-                Exemplo: 929, 44, 97379. 
-                </p>
-           </header>
+           <Header
+                title="Palindromo"
+                text={`Números palíndromos são aqueles que escritos da direita para esquerda ou da esquerda para direita tem o mesmo valor. 
+                Exemplo: 929, 44, 97379. `}
+           />
            <div className={styles.Main}>
                <h3>Digite o intervalo para a consulta:</h3>
                <section>

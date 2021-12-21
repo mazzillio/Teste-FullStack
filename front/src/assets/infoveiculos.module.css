@@ -1,0 +1,13 @@
+.bloco{
+    margin:2%;
+    padding:3%;
+    list-style: none;
+    background-color: #98ff98;
+    border:1px solid #98ff98;
+    border-radius: 0 10px 0 10px;
+    min-height: 170px;
+    max-width: 220px;
+    display: grid;
+    text-align: left;
+    color: black;
+}

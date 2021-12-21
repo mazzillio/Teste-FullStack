@@ -5,6 +5,8 @@ import App from './App';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Palindromo from './components/palindromo';
 import Troco from './components/troco';
+import Veiculos from './components/veiculo';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +15,7 @@ ReactDOM.render(
             <Route path="/" element={<App />}/>
             <Route path="/palindromo" element ={<Palindromo/>} />
             <Route path="/troco" element={<Troco/>} />
+            <Route path="/veiculos" element={<Veiculos/>} />
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,

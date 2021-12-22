@@ -85,12 +85,6 @@
         "marca": "yamaha",
         "rodas": 2,
         "passageiros": "entre 1 e 2"
-    },
-    {
-        "tipo": "Moto",
-        "modelo": "titã",
-        "ano": "1990",
-        "portas": "Entre 2 e 4",
-        "marca": "tamaha"
     }
+    
 ]

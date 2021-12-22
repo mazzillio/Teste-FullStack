@@ -42,7 +42,7 @@ export default function Palindromo()
                     <input type="text" placeholder='' id="numeroFim" onChange={(e)=>handle(e.target.value,setFim)}/>
                   
 
-                    <button onClick={()=>getData(ini,fim)}>Procurar</button>
+                    <button className={styles.btn} onClick={()=>getData(ini,fim)}>Procurar</button>
                </section>
                <section className={styles.sectionList}>
                    <ul className={styles.list}>

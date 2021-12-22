@@ -42,7 +42,7 @@ export default function Troco()
                  <input type="text" placeholder='' id="numeroFim" onChange={(e)=>handle(e.target.value,setValor)}/>
                
 
-                 <button onClick={()=>getData()}>Verificar Pagamento</button>
+                 <button className={styles.btn} onClick={()=>getData()}>Verificar Pagamento</button>
                </section>
                {
                    resultados.length!==0?

@@ -39,7 +39,7 @@ export default function Ceps()
                 `}
             />
             <div style={{marginTop:'7%'}}>
-                <p>Digite 5 CEPS para serem pesquisados</p>
+                <p>Digite 5 CEPS</p>
                 <label for="Cep">Digite o CEP a ser pesquisado:</label>
                 <input name="Cep" value={cepDigitado} onChange={(e)=>handleCep(e.target.value)}/>
                 <i class="fas fa-plus-circle" onClick={click}></i>
@@ -49,11 +49,18 @@ export default function Ceps()
                         return<li key={key}>{cep}</li>
                     }):null
                 }
-                </ul>  
-                <i class="fas fa-search-plus" onClick={buscaCeps}></i>
-                    <p>Ceps Resultantes</p>
+                </ul>
+                <div className={styles.divPesquisa}>
+                <p className={styles.pesquisaCeps}>Pesquisar CEPS</p>
+                <i class="fas fa-search-plus" onClick={buscaCeps} 
+                    style={{fontSize:'35px'}}
+                ></i>
+                </div>
                { 
-                infosCeps?<ListCeps ceps={infosCeps}/>:null  
+                infosCeps?<>
+                
+                <ListCeps ceps={infosCeps}/>
+                </>:null  
                 }     
             </div>
             </>

@@ -6,3 +6,17 @@
     color:white;
     padding-top: 1%; 
 }
+.search{
+   font-size: 10px;
+}
+.divPesquisa{
+    margin-top: 2%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.pesquisaCeps{
+    font-size: 20px;
+    margin-right: 2%;
+}

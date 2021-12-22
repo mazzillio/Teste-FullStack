@@ -20,3 +20,12 @@ header p{
 .divSessao{
     margin-top: 7%;
 }
+.btn{
+    margin:0 2%;
+    width: 12%;
+    height: 27px;
+    color:#353839;
+    background-color: #98ff98;
+    border:1px solid #98ff98;
+    border-radius: 20px;
+}

@@ -31,3 +31,12 @@ section input{
     font-weight: bolder;
     margin: 1%;
 }
+.btn{
+    margin:0 2%;
+    width: 10%;
+    height: 25px;
+    color:#353839;
+    background-color: #98ff98;
+    border:1px solid #98ff98;
+    border-radius: 20px;
+}

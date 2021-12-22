@@ -6,7 +6,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Palindromo from './components/palindromo';
 import Troco from './components/troco';
 import Veiculos from './components/veiculo';
-
+import Ceps from './components/ceps'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +16,7 @@ ReactDOM.render(
             <Route path="/palindromo" element ={<Palindromo/>} />
             <Route path="/troco" element={<Troco/>} />
             <Route path="/veiculos" element={<Veiculos/>} />
+            <Route path="/ceps" element={<Ceps/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,

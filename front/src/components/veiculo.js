@@ -67,6 +67,7 @@ export default function Veiculos(){
                     veiculos?veiculos.map((veiculo,key)=>{
                         return (
                                 <InfoVeiculos key={key} veiculo={veiculo}/>
+                                
                                 )
                             })
                             :null

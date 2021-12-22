@@ -1,0 +1,25 @@
+.div{
+    width: 100%;
+    background-color: #353839;
+}
+.list{
+    padding: 0 5%;
+    list-style:none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.list ul{
+    list-style: none;
+    margin:8% 8% 8%;
+    background-color: #98ff98;
+    border:1px solid #98ff98;
+    border-radius: 0 10px 0 10px;
+    color:#353839;
+    max-width: 60%;
+    text-align: left;
+    padding: 4%;
+}
+.list li{
+    font-size: small;
+    margin:0 auto 4%;
+}

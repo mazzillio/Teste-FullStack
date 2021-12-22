@@ -16,7 +16,7 @@ function App() {
           <BtnRedirect title='Palíndromo' link='/palindromo'/>
           <BtnRedirect title='Troco' link='/troco'/>
           <BtnRedirect title='Veículos' link='/veiculos'/>
-          <BtnRedirect title='Ceps' link='/ceps'/>
+          <BtnRedirect title='CEPS' link='/ceps'/>
         </section>
       </main>
     </div>

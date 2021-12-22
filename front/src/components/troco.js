@@ -33,12 +33,12 @@ export default function Troco()
            <div className={styles.divSessao}>
                <h2>Digite valores para a consulta:</h2>
                <section>
-                 <label for="valor">Digite o Valor da Forma de Pagamento:</label>
+                 <label for="valor">Valor Pago: </label>
                  <input type="text" placeholder='' id="valor" onChange={(e)=>handle(e.target.value,setPagamento)}/>
                 
                 
 
-                 <label for="numeroFim">Digite o valor da Compra</label>
+                 <label for="numeroFim">Valor da Compra: </label>
                  <input type="text" placeholder='' id="numeroFim" onChange={(e)=>handle(e.target.value,setValor)}/>
                
 
@@ -46,18 +46,15 @@ export default function Troco()
                </section>
                {
                    resultados.length!==0?
-                   <section style={{display:resultados.length===0?'none':''}}>  
-                             
+                   <section className={styles.divResults}>  
                              <h4>
-                                Valor do pagamento:
+                                Valor do pagamento: R$ {resultados.DinheiroEntregue}
                             </h4>
-                            <p>R$ {resultados.DinheiroEntregue}</p>
                             <h4>
-                                Valor da Compra:
+                                Valor da Compra: R$ {resultados.ValorCompra}
                             </h4>
-                            <p>R$ {resultados.ValorCompra}</p>
                             <h4>Troco:</h4>
-                            <ul>
+                            <ul className={styles.list}>
                                 <li>{resultados.ValorTroco.note1} notas de 1</li>
                                 <li>{resultados.ValorTroco.note10} notas de 10</li>
                                 <li>{resultados.ValorTroco.note100} notas de 100</li>

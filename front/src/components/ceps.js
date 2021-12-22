@@ -32,17 +32,27 @@ export default function Ceps()
         <Container>
             <>
             <Header
-                title='Ceps'
+                title='CEPS'
                 text={`Deve ser informado pelo usuário 5 CEP’s.
                 Os Ceps informados serão obtido através do site (https://viacep.com.br/) . 
                 Os dados após o processamento devem ser exibidos na tela.
                 `}
             />
-            <div style={{marginTop:'7%'}}>
-                <p>Digite 5 CEPS</p>
+            <div className={styles.div}>
+               
                 <label for="Cep">Digite o CEP a ser pesquisado:</label>
-                <input name="Cep" value={cepDigitado} onChange={(e)=>handleCep(e.target.value)}/>
-                <i class="fas fa-plus-circle" onClick={click}></i>
+                <input name="Cep" value={cepDigitado} 
+                onChange={(e)=>handleCep(e.target.value)}
+                
+                onKeyPress={((e)=>{
+                    if(e.key==='Enter')
+                        click()
+                })}
+                />
+                <i class="fas fa-plus-circle" onClick={click}
+                    style={{fontSize:'25px',color:'#98ff98'}}
+                ></i>
+                <p>Lista de Ceps:</p>
                 <ul>
                 {
                     cepsVector.lenght!==0?cepsVector.map((cep,key)=>{
@@ -53,14 +63,14 @@ export default function Ceps()
                 <div className={styles.divPesquisa}>
                 <p className={styles.pesquisaCeps}>Pesquisar CEPS</p>
                 <i class="fas fa-search-plus" onClick={buscaCeps} 
-                    style={{fontSize:'35px'}}
+                    style={{fontSize:'35px',color:'#98ff98'}}
                 ></i>
                 </div>
                { 
                 infosCeps?<>
                 
                 <ListCeps ceps={infosCeps}/>
-                </>:null  
+                </>:null
                 }     
             </div>
             </>

@@ -25,7 +25,7 @@ export default function Palindromo()
        <Container>
            <>
            <Header
-                title="Palindromo"
+                title="Palíndromo"
                 text={`Números palíndromos são aqueles que escritos da direita para esquerda ou da esquerda para direita tem o mesmo valor. 
                 Exemplo: 929, 44, 97379. `}
            />
@@ -33,12 +33,12 @@ export default function Palindromo()
                <h3>Digite o intervalo para a consulta:</h3>
                <section>
                  
-                    <label for="numeroIni">Primeiro número do intervalo:</label>
+                    <label for="numeroIni">Primeiro número: </label>
                     <input type="text" placeholder='' id="numeroIni" onChange={(e)=>handle(e.target.value,setIni)}/>
                    
                    
 
-                    <label for="numeroFim">Último número do intervalo:</label>
+                    <label for="numeroFim">Último número: </label>
                     <input type="text" placeholder='' id="numeroFim" onChange={(e)=>handle(e.target.value,setFim)}/>
                   
 

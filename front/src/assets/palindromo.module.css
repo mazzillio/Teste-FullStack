@@ -10,9 +10,13 @@
 .Main{
     margin-top: 7%;
 }
+.Main h3{
+    margin-bottom: 2%;
+}
 section input{
     height: 20px;
     width: 50px;
+    margin-right: 2%;
 }
 .sectionList{
     height: 100%;

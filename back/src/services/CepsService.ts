@@ -17,7 +17,7 @@ export class CepsServices{
                 const consulta = await apiCeps.get(`${cep}/json/`)
                 results.push(consulta.data)
             } catch (error) {
-                console.log(error.message)
+                console.log('Cep inválido',error.message)
                 results.push(`Cep:${cep} não encontrado`)
             }
        }

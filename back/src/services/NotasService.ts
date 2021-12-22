@@ -1,13 +1,10 @@
+import { INotes } from "../InterFaces/Notas"
 
 interface INotesParams{
     money:number
     value:number
 }
-interface INotes{
-    note1:number
-    note10:number
-    note100:number
-}
+
 function changeNotes(value:number):INotes {
     const result:INotes={note1:0,note10:0,note100:0}
 

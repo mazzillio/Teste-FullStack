@@ -2,6 +2,8 @@
 import styles from '../assets/troco.module.css'
 import { api } from '../services/api'
 import { useState } from 'react/cjs/react.development'
+import Container from './container'
+import Header from './header'
 export default function Troco()
 {
     const  [valor,setValor]=useState(0.0)
@@ -20,14 +22,14 @@ export default function Troco()
         }
     }
     return(
-        <div className={styles.div}>
-            <header>
-                <h1>Troco</h1>
-                <p>Suponha que um caixa disponha apenas de notas de 1, 10 e 100 reais. Considerando que alguém está pagando uma compra, escreva um algoritmo que mostre o número mínimo de notas que o caixa deve fornecer como troco.
+        <Container>
+            <>
+            <Header
+                title="Troco"
+                text={`Suponha que um caixa disponha apenas de notas de 1, 10 e 100 reais. Considerando que alguém está pagando uma compra, escreva um algoritmo que mostre o número mínimo de notas que o caixa deve fornecer como troco.
                 Mostre também: o valor da compra, o valor do troco e a quantidade de cada tipo de nota do troco. Suponha que o sistema monetário não utilize moedas.
-                O valor da compra e o valor de dinheiro entregue ao caixa deve ser informado pelo usuário.
-                </p>
-           </header>
+                O valor da compra e o valor de dinheiro entregue ao caixa deve ser informado pelo usuário.`}
+            />
            <div className={styles.divSessao}>
                <h2>Digite valores para a consulta:</h2>
                <section>
@@ -65,7 +67,8 @@ export default function Troco()
                }
                
            </div>
-        </div>
+           </>    
+        </Container>
     )
 
 }

@@ -4,6 +4,7 @@ import {api} from '../services/api'
 import { useEffect, useState } from "react";
 import InfoVeiculos from "./infoveiculos";
 import { ReqVeiculos } from "../functions/ReqVeiculos";
+import Container from "./container";
 
 
 export default function Veiculos(){
@@ -36,7 +37,8 @@ export default function Veiculos(){
     },[veiculos,newVeiculos])
     
     return (
-        <div className={styles.div}>
+        <Container>
+            <>
             <Header
                 title='Veiculos'
                 text={`Precisamos controlar melhor os dados de alguns veículos que ficam na nossa garagem.
@@ -74,6 +76,7 @@ export default function Veiculos(){
                         }
                 </ul>
             </div>
-        </div>
+            </>
+            </Container>
     )
 }

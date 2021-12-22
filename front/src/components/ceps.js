@@ -33,13 +33,14 @@ export default function Ceps()
             <>
             <Header
                 title='Ceps'
-                text={`Deve ser informado pelo usuário 5 CEP’s
+                text={`Deve ser informado pelo usuário 5 CEP’s.
+                Os Ceps informados serão obtido através do site (https://viacep.com.br/) . 
                 Os dados após o processamento devem ser exibidos na tela.
                 `}
             />
             <div style={{marginTop:'7%'}}>
-                <p>Digite 5 ceps para serem pesquisados</p>
-                <label for="Cep">Digite Cep:</label>
+                <p>Digite 5 CEPS para serem pesquisados</p>
+                <label for="Cep">Digite o CEP a ser pesquisado:</label>
                 <input name="Cep" value={cepDigitado} onChange={(e)=>handleCep(e.target.value)}/>
                 <i class="fas fa-plus-circle" onClick={click}></i>
                 <ul>

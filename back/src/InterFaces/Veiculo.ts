@@ -2,6 +2,6 @@
 export interface Veiculo{
     Modelo:string
     AnoFabricacao:number
-    QuantidadePortas:string
+    // QuantidadePortas:string
     Marca:string
 }
